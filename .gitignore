@@ -1,0 +1,14 @@
+# Segredos e dados: nunca devem ir para o repositório
+config.json
+data.db
+data.db-*
+data-*.db
+data-*.db-*
+.env
+
+# Lixo local
+server.log
+*.log
+node_modules/
+.DS_Store
+Thumbs.db

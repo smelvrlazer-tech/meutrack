@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel de Rastreamento</title>
+<script>try{var t=localStorage.getItem('theme')||'auto';document.documentElement.dataset.theme=(t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme:dark)').matches))?'dark':'light'}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="login" hidden>
+  <form id="loginForm">
+    <h1 class="brand"></h1>
+    <p class="hint">Digite a senha para entrar</p>
+    <input type="password" id="pw" placeholder="Senha" autofocus>
+    <button class="btn" style="justify-content:center">Entrar</button>
+    <p id="loginErr" class="err"></p>
+  </form>
+</div>
+<div id="app" hidden>
+  <aside id="side">
+    <h1 class="brand"></h1>
+    <nav id="nav"></nav>
+  </aside>
+  <main>
+    <div class="top">
+      <button class="icon-btn" id="menuBtn" title="Menu"></button>
+      <h2 id="title"></h2>
+      <select id="dashSel" title="Dashboard"></select>
+      <button class="icon-btn" id="themeBtn" title="Alternar tema"></button>
+      <button class="icon-btn" id="logoutBtn" title="Sair"></button>
+    </div>
+    <section id="view"></section>
+  </main>
+</div>
+<script src="app.js"></script>
+<script src="pages.js"></script>
+</body>
+</html>
